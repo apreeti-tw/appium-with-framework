@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="AppiumFrameworks">
+    <listeners>
+        <listener class-name="org.appium.resources.Listeners"></listener>
+        <listener class-name="org.appium.resources.ExtentReporterNG"></listener>
+    </listeners>
+    <test name="CheckoutTests">
+        <parameter name="username" value="Salvo"></parameter>
+        <parameter name="country" value="Austria"></parameter>
+        <parameter name="searchText" value="OK Google"></parameter>
+        <classes>
+            <class name="org.appium.APIActionsTest"></class>
+        </classes>
+    </test>
+</suite>
